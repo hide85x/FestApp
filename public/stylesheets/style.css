@@ -1,0 +1,95 @@
+
+#logout {}
+a, a:hover, a:focus {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+#userForm {
+  padding: 20px;
+  margin: 50px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.397);
+}
+.jumbotron {
+  margin-top: 10px;
+}
+.signHelp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+#logpage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+  
+}
+.btn-google {
+  background: rgb(255, 78, 47);
+  color: white
+}
+.btn-google:hover{
+  background: rgb(221, 62, 62);
+  color: white
+
+}
+.btn-facebook {
+  background: dodgerblue;
+  border:1px solid dodgerblue;
+  color: white
+
+}
+.btn-facebook:hover {
+  background: rgb(0, 128, 255);
+  color: white
+}
+.navbar {
+  margin-bottom: 10px
+}
+
+/* form {
+  display: flex;
+  margin:auto;
+} */
+input {
+  margin-bottom: 20px;
+  padding: 3px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px outset rgba(0, 0, 0, 0.918);
+  text-align: center;
+}
+fieldset {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.788);
+
+  background-color: rgba(80, 78, 78, 0.164);
+  font-weight: 700;
+  text-align: center;
+  border: 3px solid black;
+  padding: 20px;
+  width:600px;
+  margin:auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+legend {
+  border: 3px solid black;
+  padding: 5px;
+  background-color:rgba(245, 245, 245, 0.521)  ;
+  
+  }
+  #a {
+    box-shadow: 0 0 6px 2px rgba(141, 141, 141, 0.555);
+    background-color: #fff;
+  }
+  #a:hover {
+   background-color: rgba(3, 143, 3, 0.815);
+   border:1px solid greenyellow
+  }
+
+  #openair {
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }

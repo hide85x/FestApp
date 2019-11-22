@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html" ; charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='/stylesheets/style.css'>
+    <link type="text/html" rel="stylesheet" href="stylesheets/bootstrap-social.css">
+    <script src="http://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.css">
+
+    <style type="text/css" media="screen">
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            overflow: auto;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    {{> _header}}
+    <div class="container">
+        {{> _errors}}
+        {{> _msg}}
+    </div>
+    {{{body}}}
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+{{!-- 
+    <script type="text/javascript" charset="utf-8">
+
+        scheduler.parse([
+            { text: "Meeting", start_date: "2019-01-15 14:00", end_date: "2019-01-15 17:00" },
+            { text: "Conference", start_date: "2019-01-16 12:00", end_date: "2019-01-16 19:00" },
+            { text: "Interview", start_date: "2019-01-17 09:00", end_date: "2019-01-17 10:00" }
+        ], "json");
+
+
+
+        scheduler.init('scheduler_here', new Date(Date.now()), "month");
+
+        scheduler.config.xml_date = "%Y-%m-%d %H:%i";
+
+        scheduler.load("http://localhost:5000/fest/schedule")
+
+        const dp = new dataProcessor("http://localhost:5000/fest/schedule");
+        // use RESTful API on the backend
+        dp.init(scheduler)
+        dp.setTransactionMode("POST", false);
+    </script> --}}
+
+
+</body>
+
+</html>

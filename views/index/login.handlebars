@@ -1,0 +1,43 @@
+<div id="logpage">
+
+    <form id="userForm" action="/user/login" method="POST" class="text-center signHelp">
+
+        <p class="h4 mb-4">Login</p>
+
+        <!-- Name -->
+        <input type="text" name="email" class="form-control mb-4" placeholder="email">
+
+        <!-- Email -->
+        <input type="password" name="password" class="form-control mb-4" placeholder="password">
+        <button class="btn btn-success" type="submit">LogIn</button>
+        <a class="text-center btn btn-social btn-facebook my-1" href="/auth/facebook">
+            <span class="fa fa-facebook"></span> Sign in with Facebook
+        </a>
+        <a class="text-center btn btn-social btn-google" href="#">
+            <span class="fa fa-google"></span> Sign in with Google
+        </a>
+
+
+    </form>
+
+
+    <form id="userForm" action="/user/register" method="POST" class="text-center">
+
+        <p class="h4 mb-4">Register</p>
+
+        <!-- Name -->
+        <input type="email"  name="email" id="email" class="form-control mb-4" placeholder="email">
+
+        <!-- Email -->
+        <input type="password" name="password" id="password" class="form-control mb-4" placeholder="password">
+        <input type="password" name="confirmPassword" id="ConfirmPassword" class="form-control mb-4" placeholder="confirm password">
+
+
+        <div class="signHelp">
+            <button class="btn btn-warning" type="submit">Register</button>
+
+        </div>
+
+    </form>
+
+</div>
